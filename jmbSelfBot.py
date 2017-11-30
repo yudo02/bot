@@ -5,64 +5,64 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
-#satpam = LINETCR.LINE() # Koplaxs
-#satpam.login(qr=True)
-#satpam.loginResult()
+satpam = LINETCR.LINE() # Koplaxs
+satpam.login(token="En6y9EWvpEZppJEbl8w2.kJj6gKL1avGlp7iF9MY8KG.TC6+ZqYiHfwMH6r3Ur1wRyJoJzEwlqEVO0l+3Ilu4kQ=")
+satpam.loginResult()
 
 cl = LINETCR.LINE() # Koplaxs
-cl.login(qr=True)
+cl.login(token="EnXNEObroxRGk0plxD32.AZs3a8Vf+ipnhLTOmQbtuG.3uyuCQtWSsgaV2CezhAY5b2Pz/U7NVQ432ZMdFH9tgQ=")
 cl.loginResult()
 
 ki = LINETCR.LINE() #Luffy
-ki.login(qr=True)
+ki.login(token="EndCg1xqksZh2clqOXM8.6aZTpsG37MxD+MqNsJxP6a.z3vvgxHldVDt9iM4dde94PNV2za6cs1GjgGBx2GhGhg=")
 ki.loginResult()
 
 kk = LINETCR.LINE() #Zorro
-kk.login(qr=True)
+kk.login(token="EnY0e6TAIYDXByExuvz7.8DHCNR+5ggo//QiQT7pj9W.Nn2cG6kVyUwOQqP7Rn6fjFa33uluAVQKqQZqMZfkjcQ=")
 kk.loginResult()
 
 kc = LINETCR.LINE() #Sanji
-kc.login(qr=True)
+kc.login(token="EnbhvZsIgdSlcjy7MsTf.TxpN+3FqpfVz0URVVjPPxW.WakAEpRt5S7oR56aFyhif77Z0BMgbwEVGicH7XZvWiA=")
 kc.loginResult()
 
 ks = LINETCR.LINE() #Ussop
-ks.login(qr=True)
+ks.login(token="EnTzHmiSYGKBTy3wdUS1.F998qotUGTGQIRjcj/3fKq.XkCiilSXh5bXzmbHeCwinZM07ZSNzxDmxWZ99K3aMPk=")
 ks.loginResult()
 
 ka = LINETCR.LINE() #Chooper
-ka.login(qr=True)
+ka.login(token="EnD3XXzMIpWOJX3wEWy4.+Bc/Zlua/rxta3RDE9Qfra.SwaNZAfySajsCuy9kuumZK2X2YFFouGiVBbco6jxIVA=")
 ka.loginResult()
 
 kb = LINETCR.LINE() #Franky
-kb.login(qr=True)
+kb.login(token="EnzI4wFV5eqPi1iizJ28.0LFAw+X66CVCLF7PSB30Qa.t8g71Yk3aPBbY/OxZ2tICV62BMYSV6kSAY7YkKx+C3M=")
 kb.loginResult()
 
 ko = LINETCR.LINE() #Brook
-ko.login(qr=True)
+ko.login(token="Enqi1ChOXF1e5tv514d3.SO/fObQ10CshHFFY0L3meW.qv7SQdRuFi+kzSzabEVwQCnDxTiUCZcgunqSmu1ZzXA=")
 ko.loginResult()
 
 ke = LINETCR.LINE() #Nami
-ke.login(qr=True)
+ke.login(token="EndZjPFsR4GnzOsJQAM8.5Gss6Cj7IBEXrUFBawm9oa.3lk5nBrDhd+6XtWreDRcmOTAIugG3tZd9h9jSTmkK+A=")
 ke.loginResult()
 
 ku = LINETCR.LINE() #Robin
-ku.login(qr=True)
+ku.login(token="EnjJ5bLVsSPsoJ18f9Ud.rOli1dtiBis50MI658yqRq.LfneLvC2ZZH69Y0IXcC2vqFIe+04hqmlYnlCdeXE6hw=")
 ku.loginResult()
 
 satpam = LINETCR.LINE() # Jinbei
-satpam.login(qr=True)
+satpam.login(token="EnpUKW2K7UnQdFYxuNd0.JAwaMojSWCnrhb405Gw7Sa.Rv7qNrOC1v8FaJkdW7w2+t3b9+dPo3Lwx+HZZwdxW/0=")
 satpam.loginResult()
 
 k1 = LINETCR.LINE() #Backup (Gunanya Kalo Akun Self Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Selfbot Dan Selfbot Di undang sama dia,lalu dy leave lagi :D)
-k1.login(qr=True)
+k1.login(token="EnTrVTSaSn4n7XHOdw74.hz3BUHBhWs9y9M66OUsVXa.d+KPscXO1I0/7QnYaYr9D7jMV6uVdioOzL5aRGcBOto=")
 k1.loginResult()
 
 print "Login Success Plak"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" ^[One Piece Bot]^
-OWNER •Hanavy Koplaxs•"""
+helpMessage =""" ^[JOMBANG Bot]^
+OWNER •WAHYUDI•"""
 
 Setgroup =""" 
     [Admin Menu]
@@ -76,7 +76,7 @@ Setgroup ="""
 ||-[Cancel Invited]
 ||- Cancel all
 ==============
-   ONE PIECE BOT
+   JOMBANG
 =============="""
 KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku,satpam]
 DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] #Udah Ga Kepake(Boleh di apus)
@@ -103,42 +103,42 @@ Smid = satpam.getProfile().mid #Jinbei
 mid1 = k1.getProfile().mid #Backup
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Smid,mid1]
-admin=["ued156c86ffa56024c0acba16f7889e6d","u2d76b3ee0f0795aa93d29bdfb5f2172c","uad208d16f70d0cc48645b9f5d5909936"] # Isi Dengan Mid Admin
-owner=["ued156c86ffa56024c0acba16f7889e6d"] #Isi dengan  mid Owner Plak
+admin=["u6b34b703cbc5fc83cd1e5b6832a05352"] # Isi Dengan Mid Admin
+owner=["u6b34b703cbc5fc83cd1e5b6832a05352"] #Isi dengan  mid Owner Plak
 wait = {
-    'contact':False,
+    'contact':True,
     'autoJoin':True,
-    'autoCancel':{"on":True,"members":1},
+    'autoCancel':{"on":True,"members":4},
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"""тerima Kasih Sudah Menambahkan Aku Jadi Teman
-≫ Aku Ga Jawab PM Karna aq Cuma Bot Protect ≪
-≫ ONE PIECE BOT PROTECT ≪
+    'message':"""?erima Kasih Sudah Menambahkan Aku Jadi Teman
+» Aku Ga Jawab PM Karna aq Cuma Bot Protect «
+» JOMBANG BOT PROTECT «
 
 Ready:
 
-≫ bot protect ≪
-≫ SelfBot ≪
+» bot protect «
+» SelfBot «
 
 
-ṡȗƿƿȏяṭєԀ ɞʏ:
+????????? ??:
   
-☆ ONE PIECE BOT PROTECT ☆
-☆ SMULE VOICE FAMILY ☆
-☆ FOUNDER COMMUNITY ☆
-☆ Generasi Kickers Killers ☆
+? JOMBANG BOT PROTECT ?
+? SMULE VOICE BONEX ?
+? FOUNDER COMMUNITY ?
+? Generasi Kickers Killers ?
 
 
 Minat? Silahkan PM!
-Idline: http://line.me/ti/p/~hanavy1992""",
+Idline: http://line.me/ti/p/~yudi_std02""",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
-    "clock":True,
+    "clock":False,
     "cName":"™Luffy™ ",
     "cName2":"™Zorro™ ",
     "cName3":"™Sanji™ ",
@@ -155,7 +155,7 @@ Idline: http://line.me/ti/p/~hanavy1992""",
     "wblacklist":False,
     "dblacklist":False,
     "Protectgr":True,
-    #"Protectjoin":True, # Ga Kepake(Yang Gabung langsung di kick :D) Udah  Udah ada Protect Cancell
+    "Protectjoin":True, # Ga Kepake(Yang Gabung langsung di kick :D) Udah  Udah ada Protect Cancell
     "Protectcancl":True,
     "protectionOn":True,
     "atjointicket":True
